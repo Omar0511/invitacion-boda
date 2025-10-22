@@ -136,6 +136,39 @@ p {
 
 /* Section FECHAS */
 .section-fechas {
-  background-color: var(--grisOscuro);
-  height: 50vh;
+  /* background-color: var(--grisOscuro); */
+  /* height: 50vh; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2;
+}
+
+.contenedor-contador h3 {
+  font-size: 40px;
+}
+
+.contenedor-contador p {
+  font-size: 55px;
+}
+
+.contenedor-contador h3,
+.contenedor-contador p {
+  color: var(--negro);
+  padding: 10px 0 0 0;
+  margin: 0 0 20px 0;
+}
+
+.contenedor-fecha h3 {
+  font-size: 40px;
+}
+
+.contenedor-fecha p {
+  font-size: 55px;
+}
+
+.contenedor-fecha h3,
+.contenedor-fecha p {
+  color: var(--negro);
 }

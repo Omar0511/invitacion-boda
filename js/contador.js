@@ -24,7 +24,7 @@ function actualizarContador() {
   // mostrar en el DOM
   document.getElementById(
     "contador"
-  ).textContent = `${dias} días | ${horas} horas | ${minutos} minutos | ${segundos} segundos`;
+  ).textContent = `${dias} días ${horas} horas ${minutos} minutos ${segundos} segundos`;
 }
 
 // Llamar a la función inicialmente para evitar un retraso en la visualización
