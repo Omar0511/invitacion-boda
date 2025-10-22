@@ -110,6 +110,7 @@ p {
 .fecha {
   color: var(--blanco);
   font-weight: bold;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
 }
 
 @media (min-width: 768px) {
@@ -131,4 +132,10 @@ p {
     padding: 0;
     margin: 2rem 0;
   }
+}
+
+/* Section FECHAS */
+.section-fechas {
+  background-color: var(--grisOscuro);
+  height: 50vh;
 }
