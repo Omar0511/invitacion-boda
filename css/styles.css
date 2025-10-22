@@ -108,72 +108,73 @@ p {
 }
 
 .contenido-header {
-    display: flex;
+    /* display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: center; */
 }
 
 .imagen {
-    background-image: url('/img/sesion12.jpeg');
-    /* background-image: url('/img/DSC00946.jpg'); */
-    /* background-image: url('/img/DSC00946.avif'); */
+    background-image: url('/img/Invitacion1.jpeg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
     width: 90vw;
     height: 100vh;
+    /* Convierte la imagen en blanco y negro */
+    filter: grayscale(100%);
 }
+
 @media (min-width: 768px){
     .imagen {
-        width: 50%;
+        width: 100%;
         height: 100vh;
     }
 }
 
 .texto-imagen {
-    display: flex;
+    /* display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
 }
 
 .texto-imagen h1 {
-    font-size: 3rem;
+    /* font-size: 3rem;
     font-family: var(--fuente-secundaria);
     text-transform: uppercase;
     color: var(--rosaClaro);
     margin: -1.5rem 0 20rem 0;
     text-shadow: 2px 2px 40px var(--blanco);
     text-align: center;
-    padding: 0 1rem;
+    padding: 0 1rem; */
 }
 
 .texto-imagen h1 svg {
-    fill: var(--rosaOscuro);
+    /* fill: var(--rosaOscuro);
     stroke: var(--blanco);
     width: 3rem;
-    height: 3rem;
+    height: 3rem; */
 }
 
 .texto-imagen h2 {
-    color: var(--blanco);
+    /* color: var(--blanco);
     text-shadow: 2px 2px 40px var(--rosaOscuro);
     font-size: 6rem;
     margin: 0 0 10rem 0;
-    text-align: center;
+    text-align: center; */
 }
 
 .texto-imagen h3 {
-    font-family: var(--fuente-secundaria);
+    /* font-family: var(--fuente-secundaria);
     font-size: 3rem;
     color: var(--blanco);
     text-shadow: 2px 2px 40px var(--azulClaro);
-    text-align: center;
+    text-align: center; */
 }
 
 @media (min-width: 768px){
-    .texto-imagen  h1 {
+    /* .texto-imagen  h1 {
         font-size: 5rem;
     }
 
@@ -188,7 +189,7 @@ p {
 
     .texto-imagen  h3 {
         font-size: 3rem;
-    }
+    } */
 }
 
 .contenido-texto {
