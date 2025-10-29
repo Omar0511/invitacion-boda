@@ -234,3 +234,34 @@ p {
   text-align: center;
   margin: 0;
 }
+
+/* SECCION COMO LLEGAR */
+.ubicacion {
+  text-align: center;
+  margin: 6rem 0;
+}
+
+.ubicacion a {
+  text-decoration: none;
+  border: none;
+  color: #fff;
+  background-color: #000;
+  font-size: 4rem;
+  padding: 1rem;
+  border-radius: 10rem;
+  -webkit-border-radius: 10rem;
+  -moz-border-radius: 10rem;
+  -ms-border-radius: 10rem;
+  -o-border-radius: 10rem;
+  /*transiciónsuave*/
+  transition: background-color 0.5s ease, color 0.5s ease;
+  -webkit-transition: background-color 0.5s ease, color 0.5s ease;
+  -moz-transition: background-color 0.5s ease, color 0.5s ease;
+  -ms-transition: background-color 0.5s ease, color 0.5s ease;
+  -o-transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+.ubicacion a:hover {
+  background-color: #FFF;
+  color: #000;
+}
