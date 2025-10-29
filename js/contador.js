@@ -22,9 +22,14 @@ function actualizarContador() {
   // console.log(`Tiempo restante: ${dias} días, ${horas} horas, ${minutos} minutos, ${segundos} segundos`);
 
   // mostrar en el DOM
-  document.getElementById(
-    "contador"
-  ).textContent = `${dias} días ${horas} horas ${minutos} minutos ${segundos} segundos`;
+  // document.getElementById(
+  //   "contador"
+  // ).textContent = `${dias} días ${horas} horas ${minutos} minutos ${segundos} segundos`;
+
+  document.getElementById("dias").textContent = dias;
+  document.getElementById("horas").textContent = horas;
+  document.getElementById("minutos").textContent = minutos;
+  document.getElementById("segundos").textContent = segundos;
 }
 
 // Llamar a la función inicialmente para evitar un retraso en la visualización
