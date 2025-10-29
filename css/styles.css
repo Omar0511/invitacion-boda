@@ -136,7 +136,6 @@ p {
 
 /* Main */
 .contenedor-principal {
-
 }
 
 .contenedor-principal h2 {
@@ -154,10 +153,6 @@ p {
   align-items: center;
 }
 
-.contenedor-fechas .campo-fecha {
-
-}
-
 .campo-fecha p,
 .campo-fecha span {
   margin: 1rem 0;
@@ -170,4 +165,44 @@ p {
 
 .campo-fecha span {
   font-size: 4rem;
+}
+
+/* SECCION: TE ESPERAMOS */
+.contenedor-espera {
+}
+
+.contenedor-espera h3 {
+  color: #000;
+  text-align: center;
+  font-size: 6rem;
+  margin: 10rem 0 0 0;
+}
+
+.contenedor-fecha-boda {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.contenedor-fecha-boda .campo-fecha-boda {
+}
+
+.contenedor-fecha-boda .campo-fecha-boda p {
+  color: #000;
+  font-size: 3rem;
+  font-weight: bold;
+  border-top: 0.2rem solid #000;
+  border-bottom: 0.2rem solid #000;
+  text-align: center;
+  padding: 1rem;
+  margin: 5rem 0;
+}
+
+.contenedor-fecha-boda .campo-fecha-boda:nth-child(2) p {
+  font-size: 8rem;
+  border: none;
+  margin: -3rem 0 0 0;
+  padding: 0;
+  line-height: 1; /* o ajusta a 0.8 si sigue muy abajo */
 }
