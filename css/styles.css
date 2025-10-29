@@ -208,46 +208,46 @@ p {
 }
 
 /* CEREMONÍA */
-.ceremonia {
+.ceremonia,
+.fiesta {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
-.ceremonia svg {
+.ceremonia svg,
+.fiesta svg {
   width: 20rem;
   height: 20rem;
   margin-top: 3rem;
 }
 
-.ceremonia h4 {
+.ceremonia h4,
+.fiesta h4 {
   text-align: center;
   text-transform: uppercase;
   font-size: 6rem;
   margin: 4rem 0;
 }
 
-.ceremonia p {
+.ceremonia p,
+.fiesta p {
   color: #000;
   font-size: 4rem;
   text-align: center;
-  margin: 0;
+  margin: 0 0 4rem 0;
 }
 
-/* SECCION COMO LLEGAR */
-.ubicacion {
-  text-align: center;
-  margin: 6rem 0;
-}
-
-.ubicacion a {
+.ceremonia a,
+.fiesta a {
   text-decoration: none;
   border: none;
   color: #fff;
   background-color: #000;
   font-size: 4rem;
-  padding: 1rem;
+  padding: 2rem;
+  margin-bottom: 2rem;
   border-radius: 10rem;
   -webkit-border-radius: 10rem;
   -moz-border-radius: 10rem;
@@ -261,7 +261,8 @@ p {
   -o-transition: background-color 0.5s ease, color 0.5s ease;
 }
 
-.ubicacion a:hover {
+.ceremonia a:hover,
+.fiesta a:hover {
   background-color: #FFF;
   color: #000;
 }
