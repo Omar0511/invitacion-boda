@@ -26,10 +26,25 @@ function actualizarContador() {
   //   "contador"
   // ).textContent = `${dias} días ${horas} horas ${minutos} minutos ${segundos} segundos`;
 
+  // Plural o singular para días
+  const textoDias = dias === 1 ? "día" : "días";
+  const textoHoras = horas === 1 ? "hora" : "horas";
+  const textoMinutos = minutos === 1 ? "minuto" : "minutos";
+  const textoSegundos = segundos === 1 ? "segundo" : "segundos";
+
   document.getElementById("dias").textContent = dias;
+  document.getElementById("dias").nextElementSibling.textContent = textoDias;
+
   document.getElementById("horas").textContent = horas;
+  document.getElementById("horas").nextElementSibling.textContent = textoHoras;
+
   document.getElementById("minutos").textContent = minutos;
+  document.getElementById("minutos").nextElementSibling.textContent =
+    textoMinutos;
+
   document.getElementById("segundos").textContent = segundos;
+  document.getElementById("segundos").nextElementSibling.textContent =
+    textoSegundos;
 }
 
 // Llamar a la función inicialmente para evitar un retraso en la visualización
