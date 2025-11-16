@@ -263,6 +263,50 @@ p {
 
 .ceremonia a:hover,
 .fiesta a:hover {
-  background-color: #FFF;
+  background-color: #fff;
   color: #000;
+}
+
+/* Section */
+.contenedor-secundario {
+}
+
+.contenedor-secundario h3,
+.contenedor-secundario p {
+  color: #000;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.contenedor-secundario h3 {
+  font-size: 6rem;
+  padding: 2rem;
+}
+
+.contenedor-secundario p {
+  font-size: 7rem;
+  margin: 1rem 0 5rem 0;
+  padding: 1rem;
+}
+
+.contenedor-secundario .lugar,
+.contenedor-secundario .ceremonia-fin,
+.contenedor-secundario .brindis,
+.contenedor-secundario .platillo,
+.contenedor-secundario .fiesta-final {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.contenedor-secundario .lugar svg,
+.contenedor-secundario .ceremonia-fin svg,
+.contenedor-secundario .brindis svg,
+.contenedor-secundario .platillo svg,
+.contenedor-secundario .fiesta-final svg {
+  width: 20rem;
+  height: 20rem;
+  margin: 0 0 3rem 0;
 }
