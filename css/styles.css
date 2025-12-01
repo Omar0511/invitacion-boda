@@ -142,9 +142,15 @@ p {
   color: #000;
   text-align: center;
   text-transform: uppercase;
-  font-size: 10rem;
+  font-size: 6rem;
   margin: 0;
   padding: 5rem 0;
+}
+
+@media (min-width: 768px) {
+  .contenedor-principal h2 {
+    font-size: 10rem;
+  }
 }
 
 .fechas .contenedor-fechas {
@@ -160,11 +166,21 @@ p {
 }
 
 .campo-fecha p {
-  font-size: 6rem;
+  font-size: 2.2rem;
 }
 
 .campo-fecha span {
-  font-size: 4rem;
+  font-size: 1.2rem;
+}
+
+@media (min-width: 768px) {
+  .campo-fecha p {
+    font-size: 6rem;
+  }
+
+  .campo-fecha span {
+    font-size: 4rem;
+  }
 }
 
 /* SECCION: TE ESPERAMOS */
@@ -174,8 +190,14 @@ p {
 .contenedor-espera h3 {
   color: #000;
   text-align: center;
-  font-size: 6rem;
+  font-size: 3rem;
   margin: 10rem 0 0 0;
+}
+
+@media (min-width: 768px) {
+  .contenedor-espera h3 {
+    font-size: 6rem;
+  }
 }
 
 .contenedor-fecha-boda {
@@ -190,7 +212,7 @@ p {
 
 .contenedor-fecha-boda .campo-fecha-boda p {
   color: #000;
-  font-size: 3rem;
+  font-size: 1.5em;
   font-weight: bold;
   border-top: 0.2rem solid #000;
   border-bottom: 0.2rem solid #000;
@@ -200,11 +222,22 @@ p {
 }
 
 .contenedor-fecha-boda .campo-fecha-boda:nth-child(2) p {
-  font-size: 8rem;
+  font-size: 4rem;
   border: none;
-  margin: -3rem 0 0 0;
+  margin: -1.5rem 0 0 0;
   padding: 0;
   line-height: 1; /* o ajusta a 0.8 si sigue muy abajo */
+}
+
+@media (min-width: 768px) {
+  .contenedor-fecha-boda .campo-fecha-boda p {
+    font-size: 3rem;
+  }
+
+  .contenedor-fecha-boda .campo-fecha-boda:nth-child(2) p {
+    font-size: 8rem;
+    margin: -3rem 0 0 0;
+  }
 }
 
 /* CEREMONÍA */
@@ -218,8 +251,8 @@ p {
 
 .ceremonia svg,
 .fiesta svg {
-  width: 20rem;
-  height: 20rem;
+  width: 15rem;
+  height: 15rem;
   margin-top: 3rem;
 }
 
@@ -227,14 +260,14 @@ p {
 .fiesta h4 {
   text-align: center;
   text-transform: uppercase;
-  font-size: 6rem;
+  font-size: 3rem;
   margin: 4rem 0;
 }
 
 .ceremonia p,
 .fiesta p {
   color: #000;
-  font-size: 4rem;
+  font-size: 2rem;
   text-align: center;
   margin: 0 0 4rem 0;
 }
@@ -245,7 +278,7 @@ p {
   border: none;
   color: #fff;
   background-color: #000;
-  font-size: 4rem;
+  font-size: 2rem;
   padding: 2rem;
   margin-bottom: 2rem;
   border-radius: 10rem;
@@ -267,6 +300,29 @@ p {
   color: #000;
 }
 
+@media (min-width: 768px) {
+  .ceremonia svg,
+  .fiesta svg {
+    width: 20rem;
+    height: 20rem;
+  }
+
+  .ceremonia h4,
+  .fiesta h4 {
+    font-size: 6rem;
+  }
+
+  .ceremonia p,
+  .fiesta p {
+    font-size: 4rem;
+  }
+
+  .ceremonia a,
+  .fiesta a {
+    font-size: 4rem;
+  }
+}
+
 /* Section */
 .contenedor-secundario {
 }
@@ -280,12 +336,12 @@ p {
 }
 
 .contenedor-secundario h3 {
-  font-size: 6rem;
+  font-size: 3rem;
   padding: 2rem;
 }
 
 .contenedor-secundario p {
-  font-size: 7rem;
+  font-size: 3.5rem;
   margin: 1rem 0 5rem 0;
   padding: 1rem;
 }
@@ -306,7 +362,26 @@ p {
 .contenedor-secundario .brindis svg,
 .contenedor-secundario .platillo svg,
 .contenedor-secundario .fiesta-final svg {
-  width: 20rem;
-  height: 20rem;
+  width: 15rem;
+  height: 15rem;
   margin: 0 0 3rem 0;
+}
+
+@media (min-width: 768px) {
+  .contenedor-secundario h3 {
+    font-size: 6rem;
+  }
+
+  .contenedor-secundario p {
+    font-size: 7rem;
+  }
+
+  .contenedor-secundario .lugar svg,
+  .contenedor-secundario .ceremonia-fin svg,
+  .contenedor-secundario .brindis svg,
+  .contenedor-secundario .platillo svg,
+  .contenedor-secundario .fiesta-final svg {
+    width: 20rem;
+    height: 20rem;
+  }
 }
