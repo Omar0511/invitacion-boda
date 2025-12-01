@@ -79,7 +79,7 @@ p {
 
 .imagen {
   width: auto;
-  height: 100dvh;
+  height: 70vh;
   background-image: url("/img/Invitacion1.jpeg");
   background-repeat: no-repeat;
   /* background-position: center center; */
