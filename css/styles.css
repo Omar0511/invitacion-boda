@@ -31,8 +31,8 @@ html {
 
 body {
   font-family: var(--fuente-principal);
-  background-color: var(--amarillo);
   /* overflow-x: hidden; */
+  background-image: url('/img/floresBG.jpeg');
 }
 
 img {
