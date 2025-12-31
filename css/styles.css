@@ -2,6 +2,7 @@
   --fuente-principal: "Playfair Display SC", serif;
   --fuente-secundaria: "Montserrat", sans-serif;
   --fuente-cursiva: 'Rouge Script', cursive;
+  --fuente-sacramento: "Sacramento", cursive;
   --blanco: #fff;
   --negro: #000;
   --gris: #ccc;
@@ -216,6 +217,7 @@ p {
   color: #000;
   text-align: center;
   font-size: 3rem;
+  font-family: var(--fuente-sacramento);
   margin: 10rem 0 0 0;
 }
 
