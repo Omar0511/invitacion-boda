@@ -12,6 +12,8 @@
   --azulClaro: #97adc2;
   --azulOscuro: #7c8d9f;
   --gris: #5e5745;
+  --lila: #E1D6DE;
+  --amarillo: #fffadd;
 }
 
 html {
@@ -27,7 +29,7 @@ html {
 
 body {
   font-family: var(--fuente-principal);
-  background-color: var(--blanco);
+  background-color: var(--amarillo);
   /* overflow-x: hidden; */
 }
 
@@ -63,6 +65,7 @@ p {
   margin: 0 auto;
   /* padding: 0 2rem 0 0; */
   padding: 0;
+  background-color: var(--lila);
 }
 
 @media (max-width: 768px) {
