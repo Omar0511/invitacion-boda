@@ -412,3 +412,105 @@ p {
     height: 20rem;
   }
 }
+
+/* CONFIRMAR */
+.contenedor-formulario {
+    padding: 1rem;
+    background-color: var(--lila);
+    overflow: hidden;
+}
+
+.contenedor-formulario h2 {
+    text-align: center;
+    text-transform: uppercase;
+    font-family: var(--fuente-secundaria);
+    font-size: 3rem;
+    padding: 1rem;
+    color: var(--negro);
+}
+
+.icono-confirmar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.icono-confirmar svg {
+    fill: var(--grisClaro);
+    stroke: var(--negro);
+    width: 15rem;
+    height: 15rem;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.formulario label {
+    text-align: center;
+    font-size: 3rem;
+    font-family: var(--fuente-secundaria);
+    text-transform: uppercase;
+    font-weight: bold;
+    color: var(--negro);
+    padding: 1rem;
+}
+
+.formulario input[type="text"] {
+    color: var(--negro);
+    font-size: 2rem;
+    font-family: var(--fuente-secundaria);
+    padding: 1rem;
+    margin: 1rem 0;
+    border: none;
+    border-radius: 0.5rem;
+    -webkit-border-radius: 0.5rem;
+    -moz-border-radius: 0.5rem;
+    -ms-border-radius: 0.5rem;
+    -o-border-radius: 0.5rem;
+}
+
+.formulario input[type="submit"] {
+    color: var(--gris);
+    background-color: var(--rosaOscuro);
+    font-size: 2rem;
+    font-family: var(--fuente-secundaria);
+    text-transform: uppercase;
+    text-align: center;
+    padding: 1.5rem;
+    margin: 2rem 0;
+    border: none;
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+}
+
+.formulario input[type="submit"]:hover {
+    cursor: pointer;
+    background-color: var(--rosaClaro);
+    color: var(--azulOscuro);
+    font-weight: bold;
+}
+
+.formulario textarea {
+    resize: none;
+    padding: 1rem;
+    width: 100%;
+    min-height: 10rem;
+    font-size: 2rem;
+    color: var(--negro);
+    border: none;
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+    font-family: var(--fuente-secundaria);
+}
