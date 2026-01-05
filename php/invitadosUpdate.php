@@ -18,10 +18,10 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     // Obtener y limpiar datos
     $nombre = strtoupper(mysqli_real_escape_string($conn, $_POST['nombre']));
     $adultos = intval($_POST['adultos']); // Asegurarse de que sean números enteros
-    $niños = intval($_POST['niños']);
+    $niños = intval($_POST['ninos']);
 
     // Actualizar la tabla 'invitados'
-    $sql = "UPDATE invitados SET adultos = $adultos, niños = $niños, confirmado = 1 WHERE nombre = '$nombre'";
+    $sql = "UPDATE invitados SET adultos = $adultos, ninos = $niños, confirmado = 1 WHERE nombre = '$nombre'";
     $result = mysqli_query($conn, $sql);
 ?>
 
