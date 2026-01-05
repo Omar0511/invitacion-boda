@@ -112,7 +112,7 @@ p {
 /* 📱 MOBILE */
 @media (max-width: 768px) {
   .imagen {
-    height: 80vh;
+    height: 82vh;
     width: 100%;
     background-size: contain;
   }
