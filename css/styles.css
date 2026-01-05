@@ -82,14 +82,13 @@ p {
   /* background-color: var(--negro); */
 }
 
-.imagen {
+/* .imagen {
   width: auto;
-  height: 70vh;
-  /* background-image: url("/img/Invitacion1.jpeg"); */
+  height: 100vh;
   background-image: url("/img/imgInvitiacion.jpeg");
-  background-repeat: no-repeat;
+  background-repeat: no-repeat; 
   background-position: center center;
-  background-size: cover;
+  background-size: contain;
 }
 
 @media (min-width: 768px) {
@@ -98,71 +97,26 @@ p {
     height: 100vh;
     background-size: cover;
   }
-}
-
-
-/* .invitation {
-  max-width: 1200px;
-  width: 100%;
-  background-color: var(--lila);
-  padding: 1rem;
-  text-align: center;
-}
-
-.invitation h1 {
-  font-size: 3rem;
-  text-align: center;
-  margin: 0;
-  padding: 0;
-}
-
-.invitation .mensaje {
-  font-size: 2rem;
-  font-weight: 100;
-  font-family: var(--fuente-secundaria);
-  margin: 5rem 0 0 0;
-  padding: 1rem;
-}
-
-.invitation .bautizan {
-  font-size: 2rem;
-  font-weight: 500;
-  font-family: var(--fuente-secundaria);
-}
-
-.invitation .nombre-bebe {
-  font-family: var(--fuente-principal);
-  font-size: 3rem;
-  font-weight: bold;
-}
-
-.photo {
-  background: #fff;
-  padding: 10px 10px 18px;
-  margin: 30px auto;
-  width: 85%;
-  box-shadow: 0 8px 18px rgba(0,0,0,0.15);
-}
-
-.photo img {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-
-.rotate-left {
-  transform: rotate(-3deg);
-}
-
-.rotate-right {
-  transform: rotate(3deg);
-}
-
-@media (max-width: 480px) {
-  .photo {
-    width: 92%;
-  }
 } */
+
+.imagen {
+  width:auto;
+  height: 100vh;
+  background-image: url("/img/imgInvitiacion.jpeg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  background-color: var(--lila);
+}
+
+/* 📱 MOBILE */
+@media (max-width: 768px) {
+  .imagen {
+    height: 80vh;
+    width: 100%;
+    background-size: contain;
+  }
+}
 
 .titulo {
   font-size: 20px;
@@ -409,63 +363,68 @@ p {
 }
 
 /* Section */
-.contenedor-secundario {
+.contenedor-confirma {
+  margin-bottom: 1rem;
 }
 
-.contenedor-secundario h3,
-.contenedor-secundario p {
+.contenedor-confirma h3,
+.contenedor-confirma p {
   color: #000;
   text-align: center;
   text-transform: uppercase;
   margin: 0;
 }
 
-.contenedor-secundario h3 {
+.contenedor-confirma h3 {
   font-size: 3rem;
   padding: 2rem;
 }
 
-.contenedor-secundario p {
+.contenedor-confirma p {
   font-size: 3.5rem;
   margin: 1rem 0 5rem 0;
   padding: 1rem;
 }
 
-.contenedor-secundario .lugar,
-.contenedor-secundario .ceremonia-fin,
-.contenedor-secundario .brindis,
-.contenedor-secundario .platillo,
-.contenedor-secundario .fiesta-final {
+.contenedor-confirma .lugar,
+.contenedor-confirma .ceremonia-fin,
+.contenedor-confirma .brindis,
+.contenedor-confirma .platillo,
+.contenedor-confirma .fiesta-final {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
-.contenedor-secundario .lugar svg,
-.contenedor-secundario .ceremonia-fin svg,
-.contenedor-secundario .brindis svg,
-.contenedor-secundario .platillo svg,
-.contenedor-secundario .fiesta-final svg {
+.contenedor-confirma .lugar svg,
+.contenedor-confirma .ceremonia-fin svg,
+.contenedor-confirma .brindis svg,
+.contenedor-confirma .platillo svg,
+.contenedor-confirma .fiesta-final svg {
   width: 15rem;
   height: 15rem;
   margin: 0 0 3rem 0;
 }
 
+.contenedor-confirma .ceremonia-fin svg {
+  
+}
+
 @media (min-width: 768px) {
-  .contenedor-secundario h3 {
+  .contenedor-confirma h3 {
     font-size: 6rem;
   }
 
-  .contenedor-secundario p {
+  .contenedor-confirma p {
     font-size: 7rem;
   }
 
-  .contenedor-secundario .lugar svg,
-  .contenedor-secundario .ceremonia-fin svg,
-  .contenedor-secundario .brindis svg,
-  .contenedor-secundario .platillo svg,
-  .contenedor-secundario .fiesta-final svg {
+  .contenedor-confirma .lugar svg,
+  .contenedor-confirma .ceremonia-fin svg,
+  .contenedor-confirma .brindis svg,
+  .contenedor-confirma .platillo svg,
+  .contenedor-confirma .fiesta-final svg {
     width: 20rem;
     height: 20rem;
   }
