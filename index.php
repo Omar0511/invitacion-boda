@@ -35,6 +35,13 @@
     href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap"
     rel="stylesheet" />
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Allura&family=Delius&family=Edu+SA+Beginner:wght@400..700&family=Rouge+Script&family=Sacramento&family=Tangerine:wght@400;700&display=swap"
+    rel="stylesheet">
+
+
   <link href="https://cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@4/dark.css" rel="stylesheet" />
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.js"></script>
 
@@ -91,7 +98,7 @@
       </div>
     </section>
 
-    <section class="contenedor-espera">
+    <!-- <section class="contenedor-espera">
       <div class="contenedor-fecha-boda">
         <div class="campo-fecha-boda">
           <p>Sábado</p>
@@ -105,7 +112,7 @@
           <p>Enero</p>
         </div>
       </div>
-    </section>
+    </section> -->
 
     <section class="ceremonia">
       <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#000000"
@@ -168,7 +175,7 @@
       </svg>
     </div>
 
-    <form id="formulario" class="formulario" action="php/invitados.php" method="POST">
+    <form id="formulario" class="formulario" action="/php/invitados.php" method="POST">
       <label for="nombre">Nombre</label>
       <input type="text" name="nombre" id="nombre" placeholder="Ingresa Nombre ó Familia" required>
 
@@ -182,9 +189,9 @@
   <script src="js/contador.js"></script>
   <script src="js/invitados.js"></script>
   <!-- <script src="js/swiper.js"></script> -->
-  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <!-- <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-  <script src="js/swiper.js"></script>
+  <script src="js/swiper.js"></script> -->
 </body>
 
 </html>

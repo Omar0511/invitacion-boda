@@ -1,6 +1,7 @@
 :root {
   --fuente-principal: "Playfair Display SC", serif;
   --fuente-secundaria: "Montserrat", sans-serif;
+  --fuente-rougue: "Rouge Script", cursive;
   --blanco: #fff;
   --negro: #000;
   --gris: #ccc;
@@ -161,8 +162,10 @@ p {
 .contenedor-principal h2 {
   color: #000;
   text-align: center;
-  text-transform: uppercase;
+  font-family: var(--fuente-rougue);
+  /* text-transform: uppercase; */
   font-size: 6rem;
+  font-weight: 400;
   margin: 0;
   padding: 5rem 0;
 }
@@ -280,15 +283,17 @@ p {
 
 .ceremonia h4,
 .fiesta h4 {
+  font-family: var(--fuente-rougue);
+  font-weight: 400;
   text-align: center;
-  text-transform: uppercase;
-  font-size: 3rem;
+  font-size: 4rem;
   margin: 4rem 0;
 }
 
 .ceremonia p,
 .fiesta p {
   color: #000;
+  font-family: var(--fuente-secundaria);
   font-size: 2rem;
   text-align: center;
   margin: 0 0 4rem 0;
@@ -513,4 +518,126 @@ p {
     -ms-border-radius: 1rem;
     -o-border-radius: 1rem;
     font-family: var(--fuente-secundaria);
+}
+
+/* FORMULARIO CONFIRMACIÓN */
+.contenedor-confirmacion {
+    padding: 1rem;
+    background-color: var(--lila);
+    font-family: var(--fuente-secundaria);
+}
+
+.contenedor-confirmacion h1 {
+    font-size: 4rem;
+    text-transform: uppercase;
+    color: var(--negro);
+    padding: 1rem;
+    margin: 5rem 0;
+}
+
+.contenedor-confirmacion h2 {
+    font-size: 3rem;
+    text-transform: uppercase;
+    color: var(--grisOscuro);
+    padding: 1rem;
+    margin: 1rem 0;
+}
+
+.contenedor-confirmacion h3 {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    color: var(--negro);
+    padding: 1rem;
+    margin: 1rem 0;
+}
+
+.contenedor-confirmacion .formulario-confirmacion h3 {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    color: var(--grisOscuro);
+    padding: 1rem;
+    margin: 1rem 0;
+}
+
+.contenedor-confirmacion h3 span {
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: var(--grisOscuro);
+    padding: 1rem;
+    margin: 1rem 0;
+}
+
+.contenedor-confirmacion .formulario-confirmacion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    margin: 1rem 0;
+}
+
+.contenedor-confirmacion .formulario-confirmacion fieldset {
+    background-color: var(--amarillo);
+    padding: 2rem 2rem 0 2rem;
+    border: none;
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+}
+
+.contenedor-confirmacion .formulario-confirmacion .campo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; /* Para que el contenedor del input y label ocupe todo el ancho */
+    max-width: 500px;
+    margin: 1rem 0;
+}
+
+.contenedor-confirmacion .formulario-confirmacion label {
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 1rem;
+    margin: 1rem;
+    color: var(--grisOscuro);
+    text-transform: uppercase;
+    width: 12rem;
+}
+
+.contenedor-confirmacion .formulario-confirmacion input[type="number"] {
+    padding: 1rem;
+    margin: 1rem 0;
+    border: none;
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+    color: var(--grisOscuro);
+    font-size: 1.8rem;
+    width: 10rem;
+}
+
+.contenedor-confirmacion .formulario-confirmacion input[type="submit"] {
+    padding: 1rem;
+    margin: 5rem 0 3rem 0;
+    font-size: 2rem;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+    background-color: var(--blanco);
+    color: var(--grisOscuro);
+}
+
+.contenedor-confirmacion .formulario-confirmacion input[type="submit"]:hover {
+    cursor: pointer;
+    background-color: var(--lila);
+    color: var(--blanco);
+    font-weight: bold;
 }

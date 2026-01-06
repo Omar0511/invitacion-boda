@@ -47,18 +47,17 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
             // Mostrar los datos de cada fila
             while ($row = mysqli_fetch_assoc($result)) {
                 if ($row['confirmado'] == 1) { // Verificar si ya está confirmado
-  ?>
-
+                    ?>
   <script>
   Swal.fire({
     title: '¡Ya has confirmado!',
     html: `<h1><?php echo $row['nombre']; ?></h1>
-      <h2>Mesa: por asignar...</h2>
-      <h2>Boletos </h2>
-      <h2>Adultos: <?php echo $row['adultos']; ?></h2>
-      <?php if ($row['ninos'] > 0) { ?>
-      <h2>Niños: <?php echo $row['ninos']; ?></h2>
-      <?php } ?>`,
+                                   <h2>Mesa: por asignar...</h2>
+                                   <h2>Boletos</h2>
+                                   <h2>Adultos: <?php echo $row['adultos']; ?></h2>
+                                   <?php if ($row['ninos'] > 0) { ?>
+                                   <h2>Niños: <?php echo $row['ninos']; ?></h2>
+                                   <?php } ?>`,
     icon: 'info',
     confirmButtonText: 'Aceptar'
   }).then((result) => {
@@ -68,23 +67,21 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     }
   });
   </script>
-
   <?php
                 } else {
                     ?>
   <div class="contenedor sombra contenedor-confirmacion">
-    <h1>Confirmación de Boletos</h1>
+    <h1>¡Gracias por confirmar!</h1>
 
     <h2><?php echo $row['nombre']; ?></h2>
 
     <h3>Mesa: <span>por asignar...</span></h3>
 
-    <h3>Nota: <span>De los boletos asignados, confirma cuántos asistirán...</span>
-    </h3>
+    <h3>Nota: <span>De los boletos asignados, confirma cuántos necesitarás...</span></h3>
 
     <form action="invitadosUpdate.php" class="formulario-confirmacion" method="POST">
       <fieldset>
-        <h3>Boletos: <?php echo $row['boletos']; ?></h3>
+        <h3>Boletos</h3>
 
         <input type="hidden" name="nombre" id="nombre" value="<?php echo $nombre; ?>">
 
