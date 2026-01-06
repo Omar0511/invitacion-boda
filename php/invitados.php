@@ -84,7 +84,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
     <form action="invitadosUpdate.php" class="formulario-confirmacion" method="POST">
       <fieldset>
-        <h3>Boletos: <?php echo $row['boletos']; ?></h3>
+        <h3>Boletos</h3>
 
         <input type="hidden" name="nombre" id="nombre" value="<?php echo $nombre; ?>">
 

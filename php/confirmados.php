@@ -17,10 +17,10 @@ if (!$conn) {
 $sql = "SELECT * FROM invitados WHERE confirmado = 1"; // Cambia 'invitados' y 'nombre' por los nombres correctos
 $result = mysqli_query($conn, $sql);
 
-$sqlContar = "SELECT SUM(adultos) as adultos, SUM(niños) as niños FROM invitados";
+$sqlContar = "SELECT SUM(adultos) as adultos, SUM(ninos) as niños FROM invitados";
 $resultContar = mysqli_query($conn, $sqlContar);
 
-$sqlContarConfirmados = "SELECT SUM(adultos) as adultosConfirmados, SUM(niños) as niñosConfirmados FROM invitados WHERE confirmado = 1";
+$sqlContarConfirmados = "SELECT SUM(adultos) as adultosConfirmados, SUM(ninos) as niñosConfirmados FROM invitados WHERE confirmado = 1";
 $resultContarConfirmados = mysqli_query($conn, $sqlContarConfirmados);
 
 if (mysqli_num_rows($result) > 0) {
@@ -58,7 +58,7 @@ if (mysqli_num_rows($result) > 0) {
         <tr>
           <td> <?php echo $row['nombre']; ?> </td>
           <td> <?php echo $row['adultos']; ?> </td>
-          <td> <?php echo $row['niños']; ?> </td>
+          <td> <?php echo $row['ninos']; ?> </td>
         </tr>
         <?php
                     }
@@ -70,8 +70,7 @@ if (mysqli_num_rows($result) > 0) {
     <table class="tabla">
       <thead>
         <th>Adultos</th>
-        <th>Niños 3 - 12</th>
-        <th>Conversión Niños a Adultos 2N = 1A</th>
+        <th>Niños</th>
         <th>Boletos Asignados</th>
         <th>Total Boletos</th>
         <th>Disponibles</th>
@@ -83,7 +82,6 @@ if (mysqli_num_rows($result) > 0) {
         <tr>
           <td> <?php echo $row['adultos']; ?> </td>
           <td> <?php echo $row['niños']; ?> </td>
-          <td> <?php echo $row['niños'] / 2; ?> </td>
           <td> <?php echo $row['adultos'] + $row['niños'] / 2 ; ?> </td>
           <td>200</td>
           <td> <?php echo ( 200 - ($row['adultos'] + $row['niños'] / 2) ); ?> </td>
@@ -98,9 +96,8 @@ if (mysqli_num_rows($result) > 0) {
     <table class="tabla">
       <thead>
         <th>Adultos Confirmados</th>
-        <th>Niños 3 - 12 Confirmados</th>
-        <th>Conversión Niños a Adultos 2N = 1A</th>
-        <th>Suma de Boletos Confirmados</th>
+        <th>Niños</th>
+        <th>Suma de Boletos</th>
         <th>Total Boletos</th>
         <th>Disponibles Sin Confirmar </th>
       </thead>
@@ -111,7 +108,6 @@ if (mysqli_num_rows($result) > 0) {
         <tr>
           <td> <?php echo $row['adultosConfirmados']; ?> </td>
           <td> <?php echo $row['niñosConfirmados']; ?> </td>
-          <td> <?php echo $row['niñosConfirmados'] / 2; ?> </td>
           <td> <?php echo $row['adultosConfirmados'] + $row['niñosConfirmados'] / 2 ; ?> </td>
           <td>200</td>
           <td> <?php echo ( 200 - ($row['adultosConfirmados'] + $row['niñosConfirmados'] / 2) ); ?> </td>

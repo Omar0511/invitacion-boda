@@ -532,11 +532,18 @@ p {
 }
 
 .contenedor-confirmacion h1 {
-  font-size: 4rem;
-  text-transform: uppercase;
+  font-family: var(--fuente-rougue);
+  font-weight: 400;
+  font-size: 3rem;
   color: var(--negro);
   padding: 1rem;
   margin: 5rem 0;
+}
+
+@media (min-width: 768px) {
+  .contenedor-confirmacion h1 {
+    font-size: 4rem;
+  }
 }
 
 .contenedor-confirmacion h2 {
@@ -644,4 +651,42 @@ p {
   background-color: var(--lila);
   color: var(--blanco);
   font-weight: bold;
+}
+
+/* TABLA */
+.contenedor-tabla {
+    width: 100%;
+    overflow: auto;
+}
+
+.tabla {
+    width: 60%;
+    max-width: 120rem;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.tabla thead {
+    background-color: var(--rosaOscuro);
+}
+
+.tabla thead th {
+    font-size: 3rem;
+    font-family: var(--fuente-secundaria);
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--blanco);
+    padding: 1rem;
+}
+
+.tabla tbody {
+    background-color: var(--azulOscuro);
+}
+
+.tabla tbody tr td {
+    color: var(--rosa);
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 1rem;
 }
