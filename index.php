@@ -98,6 +98,26 @@
       </div>
     </section>
 
+    <section class="padrinos">
+      <h2>Padrinos</h2>
+
+      <div>
+        <h3>Velación</h3>
+
+        <p>Juan Pablo Pinto Loza</p>
+
+        <p>Nancy Edith Rivera Lona</p>
+      </div>
+
+      <div>
+        <h3>Bautizo</h3>
+
+        <p>Omar Heriberto García Salazar</p>
+
+        <p>Nadia Noemí Zapata Rendón</p>
+      </div>
+    </section>
+
     <!-- <section class="contenedor-espera">
       <div class="contenedor-fecha-boda">
         <div class="campo-fecha-boda">

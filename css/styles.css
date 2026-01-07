@@ -175,6 +175,22 @@ p {
   }
 }
 
+.contenedor-principal .padrinos h2 {
+  margin: 0;
+  padding: 1rem;
+}
+
+.contenedor-principal .padrinos h3 {
+  font-size: 4rem;
+  font-family: var(--fuente-principal);
+  font-weight: 400;
+}
+
+.contenedor-principal .padrinos p {
+  font-size: 2.5rem;
+  font-family: var(--fuente-secundaria);
+}
+
 .fechas .contenedor-fechas {
   display: flex;
   justify-content: space-evenly;
